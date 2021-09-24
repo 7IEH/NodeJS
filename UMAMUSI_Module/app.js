@@ -18,6 +18,7 @@ db.on('error',function(err){
 
 //routes
 app.use('/', require('./routes/index'))
+app.use('/users', require('./routes/users'))
 
 // Other Setting
 app.set('view engine','ejs');
