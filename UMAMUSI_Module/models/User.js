@@ -4,19 +4,19 @@ var mongoose = require('mongoose');
 
 //schema
 var userSchema = mongoose.Schema({
-    userName:{
+    username:{
         type:String,
-        require:[true,'Username is required!'],
+        required:[true,'Username is required!'],
         unique:true
     },
-    userID:{
+    userid:{
         type:String,
-        require:[true,'UserID is required!'],
+        required:[true,'UserID is required!'],
         unique:true
     },
     password:{
         type:String,
-        require:[true,'Password is required!'],
+        required:[true,'Password is required!'],
         select:false
     }
 },{
