@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pentago</title>
+    <link rel="stylesheet" href="/css/master.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="hero">
+      <div class="navbar">
+        <ul>
+          <img src="/img/logo.png" alt="logo">
+        </ul>
+      </div>
+      <div class="banner">
+        <div class="left-column">
+          <img src="/img/banner.png" alt="banner">
+        </div>
+        <div class="right-column">
+          <div class="UserID">
+            <h1>UserID</h1>
+            <input type="text">
+          </div>
+          <div class="Password">
+            <h1>Password</h1>
+            <input type="password">
+          </div>
+          <div class="btn">
+            <button type="button" onclick="gamein()">sign in</button>
+            <button type="button" class="signup" onclick="signup()">sign up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script>
+  function gamein(){
+     location.href="/about";
+  }
+  function signup(){
+    location.href="users/new";
+  }
+  </script>
+  </body>
+</html>

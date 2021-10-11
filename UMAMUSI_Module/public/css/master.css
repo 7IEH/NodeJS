@@ -1,31 +1,85 @@
-body {
-  font-family: 'Open Sans', sans-serif;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Archivo', sans-serif;
+  background-color:lightgray
 }
-.breadcrumb-item {
-  font-size: 0.8em !important;
+.hero{
+  width: 70%;
+  margin: auto;
 }
-.ellipsis{
-  display: block;
+.navbar{
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+}
+.banner{
+  display: flex;
+  margin-top: 80px; /*margin-top 위치 선정 같음 */
+}
+.left-column,.right-column{
+  flex-basis: 50%;
+}
+.left-column img{
   width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  height: 100%;
 }
-
-.board-table {
-  table-layout: fixed;
+.right-column{
+  background-color: gray;
 }
-.board-table .date {
-  width: 100px;
+.UserID{
+  background-color: gray;
+  margin-top: 150px;
+  margin-left: 100px;
 }
-
-.post-body{
-  white-space: pre-line;
+.UserID input{
+  width: 70%;
+  font-size: 30px;
+  border: 0;
+  outline:none;
+  position: relative;
+  background-color: gray;
+  border-bottom: 3px solid black;
 }
-.post-info{
-  font-size: 0.8em;
+.UserID h1{
+  background-color: gray;
+  font-size: 50px;
 }
-
-.user-form {
-  width: 400px;
+.Password{
+  background-color: gray;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+.Password input{
+  width: 70%;
+  font-size: 30px;
+  border: 0;
+  outline:none;
+  background-color:gray;
+  border-bottom: 3px solid black;
+}
+.Password h1{
+  background-color: gray;
+  font-size: 50px;
+}
+.btn{
+  margin-top: 100px;
+  margin-left: 100px;
+  background-color: gray;
+}
+.btn button{
+  width: 190px;
+  height: 60px;
+  padding: 7px 30px;
+  margin-right: 30px;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  color: black;
+  background: lightgray;
+  font-size: 30px;
+}
+.btn .signup{
+  background: linear-gradient(black,white);
+  color: white;
 }
